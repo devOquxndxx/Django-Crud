@@ -168,7 +168,7 @@ def update_record(request, pk):
                 # Redirige al usuario a la página de inicio (home).
                 return redirect('home')
             # Renderiza la plantilla 'update_record.html' y pasa el formulario como contexto.
-            return render(request, 'update_record.html', {'form': form})
+        return render(request, 'update_record.html', {'form': form})
     else:  # Si el usuario no está autenticado.
         # Muestra un mensaje de error al usuario.
         # Muestra un mensaje de error al usuario.
